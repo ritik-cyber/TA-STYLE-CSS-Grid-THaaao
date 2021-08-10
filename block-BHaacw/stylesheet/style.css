@@ -161,7 +161,7 @@ body {
 
 .grid {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -196,15 +196,26 @@ body {
   margin: 0 auto;
 }
 .item3 {
-  background-color: red;
+  /* background-color: red; */
   padding: 0.2rem 0;
 }
-.item3 a {
-  color: #fff;
-}
-.padding {
-  padding: 0;
-}
+
 .item4 {
   grid-row: span 2;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-sm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .item2 {
+    grid-row-start: 5;
+  }
+}
+@media screen and (max-width: 550px) {
+  .grid-ssm {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
